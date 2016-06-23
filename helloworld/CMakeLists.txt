@@ -1,16 +1,16 @@
 cmake_minimum_required (VERSION 2.8.12)
 
-find_package (ECM REQUIRED NO_MODULE)
-
-set ( CMAKE_MODULE_PATH
-        ${ECM_MODULE_PATH}
-        ${ECM_KDE_MODULE_DIR}
-        ${CMAKE_MODULE_PATH}
-)
+# ECM modules configuration
+find_package (ECM 0.0.11 REQUIRED NO_MODULE)
+set ( CMAKE_MODULE_PATH ${ECM_MODULE_PATH} ${ECM_KDE_MODULE_DIR} ${CMAKE_MODULE_PATH} )
 
 find_package(Qt5 NO_MODULE REQUIRED Core)
 find_package(Qt5 REQUIRED COMPONENTS Qml Quick Widgets)
 find_package(KF5Plasma REQUIRED)
+
+include(KDEInstallDirs)
+include(KDECMakeSettings)
+include(KDECompilerSettings NO_POLICY_SCOPE)
 
 set ( helloworldplugin_SRCS
         plugin/helloworldplugin.cpp

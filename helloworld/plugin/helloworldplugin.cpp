@@ -1,6 +1,5 @@
-#include "model.h"
-#include "backend.h"
 #include "helloworldplugin.h"
+#include "backend.h"
 
 #include <QtQml>
 

@@ -9,7 +9,7 @@
 class Backend : public QObject
 {
     Q_OBJECT
-    Q_PROPERTY(QObject* Model READ Model CONSTANT)
+    //Q_PROPERTY(QObject* Model READ Model CONSTANT)
 
 public:
     Backend(QObject *parent=Q_NULLPTR);
