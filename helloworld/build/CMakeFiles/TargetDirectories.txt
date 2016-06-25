@@ -1,7 +1,0 @@
-/home/harish/Scratch/plasmoids/helloworld/build/CMakeFiles/install.dir
-/home/harish/Scratch/plasmoids/helloworld/build/CMakeFiles/list_install_components.dir
-/home/harish/Scratch/plasmoids/helloworld/build/CMakeFiles/rebuild_cache.dir
-/home/harish/Scratch/plasmoids/helloworld/build/CMakeFiles/helloworldplugin.dir
-/home/harish/Scratch/plasmoids/helloworld/build/CMakeFiles/install/strip.dir
-/home/harish/Scratch/plasmoids/helloworld/build/CMakeFiles/install/local.dir
-/home/harish/Scratch/plasmoids/helloworld/build/CMakeFiles/edit_cache.dir

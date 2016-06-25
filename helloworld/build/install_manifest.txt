@@ -1,5 +1,0 @@
-/home/harish/kf5/helloworld/lib64/qml/org/kde/plasma/helloworld/qmldir
-/home/harish/kf5/helloworld/lib64/qml/org/kde/plasma/helloworld/libhelloworldplugin.so
-/home/harish/kf5/helloworld/share/plasma/plasmoids/org.kde.plasma.helloworld/metadata.desktop
-/home/harish/kf5/helloworld/share/plasma/plasmoids/org.kde.plasma.helloworld/contents/ui/main.qml
-/home/harish/kf5/helloworld/share/kservices5/plasma-applet-org.kde.plasma.helloworld.desktop
