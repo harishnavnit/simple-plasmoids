@@ -19,7 +19,7 @@ public Q_SLOTS:
     void handleBackendCall();
 
 Q_SIGNALS:
-    void backendCalled();
+    void backendCalled() const;
 
 private:
     Model *m_model;

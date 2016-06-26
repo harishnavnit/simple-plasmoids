@@ -1,9 +1,7 @@
 #include "backend.h"
 
-#include <QDebug>
-
 Backend::Backend(QObject *parent)
-    : QObject(parent)
+    : QObject(parent), m_model()
 {
     connect(m_model,SIGNAL(backendCalled()),this,SLOT(handleBackendCall()));
 }

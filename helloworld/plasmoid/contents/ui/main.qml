@@ -15,7 +15,6 @@ Rectangle {
         Text {
             id: contentLabel
             anchors.centerIn: parent
-            text: source.getText
-            //text: "Hello World"
+            text: source.getText()
         }
 }
