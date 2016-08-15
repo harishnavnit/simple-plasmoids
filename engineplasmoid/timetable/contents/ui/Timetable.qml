@@ -32,40 +32,13 @@ Column {
     PlasmaCore.DataSource {
         id: timetableSource
 
+        interval: 6000
         engine: "publictransport"
-        interval: 0
-
-        onSourceAdded: {
-            connectSource(source)
-            if (arrivalSource(source) || departureSource(source)) {
-                console.log("Connecting to a timetable source")
-                timetableData.append({name: source})
-            }
-        }
-
-        onSourceRemoved: {
-            // Remove source from model
-            for (var i = 0; i < timetableData.count; i++) {
-                if (timetableData.get(i).name === source) {
-                    timetableData.remove();
-                    break;
-                }
-            }
-
-            // Check if any valid sources exist
-            for (var i = 0; i < sources.count; i++) {
-                if (arrivalSource(sources[i]) || departureSource(sources[i]) ) {
-                    alternativeSourceExists: true
-                }
-            }
-
-            if (!alternativeSourceExists) {
-                console.error("No timetable sources found !")
-            }
-        }
+        connectedSources: ["Departures no_ruter|stop=Oslo Bussterminal"]
 
         onNewData: {
             // TODO
+            timetableData.append({name: sourceName})
         }
 
         onDataChanged: {
@@ -73,13 +46,11 @@ Column {
         }
 
         Component.onCompleted: {
-            connectedSources = sources
-
             for (var i = 0; i < sources.length; i++) {
                 if ( arrivalSource(sources[i]) || departureSource(sources[i]) )
                     timetableSourceExists: true
             }
-            !timetableSourceExists ? testSource("Arrivals") : {}
+            !timetableSourceExists ? testSource("Departures") : {}
         }
     }
 

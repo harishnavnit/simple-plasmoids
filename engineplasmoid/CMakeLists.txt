@@ -9,8 +9,6 @@ include(KDEInstallDirs)
 include(KDECMakeSettings)
 include(KDECompilerSettings NO_POLICY_SCOPE)
 
-#find_package(Qt5 NO_MODULE REQUIRED Core)
-#find_package(Qt5 REQUIRED COMPONENTS Qml Quick Widgets)
 find_package(KF5Plasma REQUIRED)
 
 plasma_install_package(timetable org.kde.plasma.publictransport.timetable)
